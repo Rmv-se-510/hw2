@@ -1,4 +1,4 @@
-name: Automation for HW1
+name: Test
 
 on:
   push:
