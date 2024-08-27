@@ -10,5 +10,11 @@
     </figcaption>
 </figure>
 
+<a href="https://codecov.io/github/Rmv-se-510/hw1"><img alt="CodeCov" src="https://codecov.io/github/Rmv-se-510/hw1/graph/badge.svg?token=PIDT9JBKL4"></a> 
+<img alt="Actions Status" src="https://github.com/Rmv-se-510/hw1/Test/badge.svg">
 [![License](https://img.shields.io/badge/License-MIT-purple.svg?style=flat)](https://github.com/Rmv-se-510/hw1/main/LICENSE)
+[![Collaborators](https://img.shields.io/badge/Collaborators-3-orange.svg?style=flat)](https://github.com/Rmv-se-510/hw1/graphs/contributors)
 [![Language](https://img.shields.io/badge/Language-Python-blue.svg?style=flat)](https://github.com/Rmv-se-510/hw1/search?l=python)
+[![GitHub Release](https://img.shields.io/github/release/Rmv-se-510/hw1.svg)](https://github.com/Rmv-se-510/hw1/releases)
+[![Open Issues](https://img.shields.io/github/issues/Rmv-se-510/hw1)](https://github.com/Rmv-se-510/hw1/issues)
+[![GitHub Repo Size](https://img.shields.io/github/repo-size/Rmv-se-510/hw1.svg)](https://img.shields.io/github/repo-size/Rmv-se-510/hw1.svg)
