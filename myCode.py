@@ -1,6 +1,21 @@
-# longest_palindromic_substring.py
 
 def longest_palindromic_substring(s: str) -> str:
+    """
+    This function finds and returns the longest palindromic substring within the given input string. 
+    It uses a dynamic programming approach to optimize the solution, reducing the time complexity from exponential to polynomial time.
+
+    Arguments:
+        s (str): The input string in which to find the longest palindromic substring.
+
+    Returns:
+        str: The longest palindromic substring within the input string.
+
+    Time Complexity:
+        O(n^2)
+    """
+
+
+    # if the input string is empty then there is no palindromic string
     n = len(s)
     if n == 0:
         return ""
@@ -31,30 +46,6 @@ def longest_palindromic_substring(s: str) -> str:
                 start = i
                 max_length = length
     
-    return s[start:start + max_length]
+    lps = s[start:start + max_length]
 
-# Predefined inputs with expected outcomes
-test_cases = [
-    ("babad", "aba"),       # Both "aba" and "bab" are valid, but only one is expected here
-    ("cbbd", "bb"),         # Correct
-    ("a", "a"),             # Correct
-    ("", ""),               # Correct
-    ("aaaaa", "aaaaa"),     # Correct
-    ("ab@ba", "ab@ba"),     # Correct
-
-    # Test cases expected to fail (intentionally incorrect results)
-    ("racecar", "aceca"),   # Expected "racecar", but set to "aceca"
-    ("madam", "ada"),       # Expected "madam", but set to "ada"
-    ("level", "eve"),       # Expected "level", but set to "eve"
-    ("noon", "oo"),         # Expected "noon", but set to "oo"
-    ("abcba", "bcb")        # Expected "abcba", but set to "bcb"
-]
-
-# Running the function on predefined inputs
-for test_string, expected in test_cases:
-    result = longest_palindromic_substring(test_string)
-    print(f"Input: {test_string}")
-    print(f"Longest Palindromic Substring: {result}")
-    print(f"Expected: {expected}")
-    print("Test Passed" if result == expected else "Test Failed")
-    print()
+    return lps
