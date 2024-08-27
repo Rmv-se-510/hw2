@@ -8,7 +8,7 @@ def longest_palindromic_substring(s: str) -> str:
         s (str): The input string in which to find the longest palindromic substring.
 
     Returns:
-        str: The longest palindromic substring within the input string.
+        lps: The longest palindromic substring within the input string.
 
     Time Complexity:
         O(n^2)

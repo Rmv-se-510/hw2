@@ -64,6 +64,6 @@ def test_with_wrong_palindrome_substring():
     Test case with wrong palindromic string
     """
 
-    assert longest_palindromic_substring("abcdefg") == "ab"
+    assert longest_palindromic_substring("abcdefg") == "a"
 
     
