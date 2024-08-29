@@ -99,5 +99,37 @@ The dynamic programming solution is based on maintaining a table where `dp[i][j]
 
 5. To run the main program:
    ```bash
-   python main.py
+   python main.py --input <INPUT_STR>
    ```
+   Example:
+   ```
+   @Meet090201vora ➜ /workspaces/hw1 (main) $ python main.py --input 18975b57
+   Longest palindromic substring is :  75b57
+   @Meet090201vora ➜ /workspaces/hw1 (main) $
+   ```
+
+---
+
+## Authors and Contributors
+
+- **Meet Vora**  
+  Email: [mvora2@ncsu.edu](mailto:mvora2@ncsu.edu)
+
+- **Raj Patel**  
+  Email: [rbpatel4@ncsu.edu](mailto:rbpatel4@ncsu.edu)
+
+- **Vihar Shah**  
+  Email: [vshah23@ncsu.edu](mailto:vshah23@ncsu.edu)
+
+---
+## Contributions
+
+We welcome contributions from the community! If you would like to contribute to this project to optimize the algorithm, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b ST-XYZ`). XYZ denotes the number E.g. ST-001
+3. Make your changes and commit them (`git commit -m 'ST-XYZ: Add new feature'`).
+4. Push to the branch (`git push origin ST-XYZ`).
+5. Open a Pull Request.
+
+For major changes, please open an issue first to discuss what you would like to change. Ensure all tests pass before submitting your pull request.
