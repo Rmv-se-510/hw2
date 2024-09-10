@@ -14,3 +14,5 @@
 [![GitHub Repo Size](https://img.shields.io/github/repo-size/Rmv-se-510/hw2.svg)](https://img.shields.io/github/repo-size/Rmv-se-510/hw2.svg)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 <img alt="Actions Status" src="https://github.com/Rmv-se-510/hw2/workflows/Test/badge.svg">
+![Flake8](https://img.shields.io/badge/flake8-passing-brightgreen)
+![Pylint](https://img.shields.io/badge/pylint-passing-brightgreen)
