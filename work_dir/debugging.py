@@ -20,8 +20,11 @@ def selectionSort(arr):
        n = n - 1
 
 
+
    return arr
 
 arr_in = [5, 3, 2, 1, 8, 10, 11, 9, 23]
 
 selectionSort(arr_in)
+
+
