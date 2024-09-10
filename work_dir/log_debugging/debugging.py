@@ -1,4 +1,10 @@
+import logging, sys
+logging.basicConfig(filename='debugging.log', encoding='utf-8', level=logging.DEBUG, format='%(asctime)s %(message)s')
+logging.debug("NEW LOG")
+
+
 def selectionSort(arr):
+   logger = logging.getLogger(__name__)
    n = len(arr)
    for i in range(n):
        lowestIndex = i
@@ -7,16 +13,18 @@ def selectionSort(arr):
                lowestIndex = j
 
 
-       print("lowest index ", lowestIndex) # what index contains the lowest value?
-       print("i ", i) # where in the array should the ith smallest value be?
-       print("n ", n) # where are we considering the end of the array?
+       logger.debug("lowest index: %r", lowestIndex) # index w/ lowest value
+       logger.debug("i: %r", i) # ith smallest index
+       logger.debug("n: %r", n) # end of array
 
 
-       print("before ", arr) # what is array state before we swap anything?
+       logger.debug("before: %r", arr) # array state before we swap anything?
        arr[lowestIndex] = arr[i]
-       print("first ", arr) # what is array state after the first write?
+       logger.debug("first: %r", arr) # state after the first change?
        arr[i] = arr[lowestIndex]
-       print("final", arr) # what is array state after the second write?
+
+
+       logger.debug("final: %r", arr) # array state after the second change?
        n = n - 1
 
 
