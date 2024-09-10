@@ -1,5 +1,3 @@
-import rand
-
 def selection_sort(arr):
     
     n = len(arr)
@@ -14,9 +12,3 @@ def selection_sort(arr):
         arr[i], arr[min_index] = arr[min_index], arr[i]
     return arr
 
-
-arr = rand.random_array([None] * 20)
-
-arr_out = selection_sort(arr)
-
-print(arr_out)
