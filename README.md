@@ -6,7 +6,7 @@
 <a href="https://github.com/Rmv-se-510/hw1">Link for HW1</a>
 
 
-[![cov](https://Rmv-se-510.github.io/hw2/badges/coverage.svg)](https://github.com/Rmv-se-510/hw2/actions)
+[![cov](https://we-cli.github.io/jayin/badges/coverage.svg)](https://github.com/Rmv-se-510/hw2/actions)
 [![License](https://img.shields.io/badge/License-MIT-purple.svg?style=flat)](https://github.com/Rmv-se-510/hw2/main/LICENSE)
 [![Collaborators](https://img.shields.io/badge/Collaborators-3-orange.svg?style=flat)](https://github.com/Rmv-se-510/hw2/graphs/contributors)
 [![Language](https://img.shields.io/badge/Language-Python-blue.svg?style=flat)](https://github.com/Rmv-se-510/hw2/search?l=python)
