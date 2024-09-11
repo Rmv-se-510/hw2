@@ -80,7 +80,7 @@ def recombine(left_arr, right_arr):
         else:
             merge_arr[temp_index] = right_arr[right_index]
             right_index += 1
-        temp_index+=1
+        temp_index += 1
 
     while left_index < len(left_arr):
         merge_arr[temp_index] = left_arr[left_index]
