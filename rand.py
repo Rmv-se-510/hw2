@@ -1,3 +1,20 @@
+"""
+Random Array Generator Module
+
+This module provides functionality to populate an array with random integers
+by utilizing external command-line tools. The module relies on the `shuf` 
+command, which is available on Unix-based systems, to generate random integers.
+
+Functions:
+    - random_array(arr): Fills an array with random integers between 1 and 20
+      by invoking the `shuf` command-line tool.
+
+Requirements:
+    - This module requires the `shuf` command to be available, which is typically
+      found on Unix-like systems such as Linux and macOS.
+    - It uses Python's `subprocess` module to execute external commands.
+"""
+
 import subprocess
 
 def random_array(arr):
@@ -24,7 +41,7 @@ def random_array(arr):
         - May raise an error if `shuf` is not available or if the subprocess fails.
     """
     shuffled_num = None
-    for i in range(len(arr)):
-        shuffled_num = subprocess.run(["shuf", "-i1-20", "-n1"], capture_output=True)
+    for i,_ in enumerate(arr):
+        shuffled_num = subprocess.run(["shuf", "-i1-20", "-n1"], capture_output=True, check=True)
         arr[i] = int(shuffled_num.stdout)
     return arr
