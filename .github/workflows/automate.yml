@@ -28,7 +28,7 @@ jobs:
     
     - name: Analysing the code with autopep8
       run: |
-        autopep8 --inplace --recursive hw2_debugging.py rand.py
+        autopep8 --in-place --recursive hw2_debugging.py rand.py
 
     - name: Analysing the code with pylint
       run: |
