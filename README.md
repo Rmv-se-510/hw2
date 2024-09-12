@@ -12,7 +12,7 @@
 
 <div align="center">
     
-![Codecov](https://codecov.io/github/Rmv-se-510/hw2/branch/main/graph/badge.svg)
+[![cov](https://we-cli.github.io/jayin/badges/coverage.svg)](https://github.com/Rmv-se-510/hw2/actions)
 [![License](https://img.shields.io/badge/License-MIT-purple.svg?style=flat)](https://github.com/Rmv-se-510/hw2/main/LICENSE)
 [![Collaborators](https://img.shields.io/badge/Collaborators-3-orange.svg?style=flat)](https://github.com/Rmv-se-510/hw2/graphs/contributors)
 [![Language](https://img.shields.io/badge/Language-Python-blue.svg?style=flat)](https://github.com/Rmv-se-510/hw2/search?l=python)
@@ -70,6 +70,107 @@ Implements Merge Sort for sorting arrays and provides a `recombine` function to 
 
 ---
 
+
+## Directory Structure
+
+- **`post_traces`**: Contains logs and screenshots generated after running static analysis tools like *autopep8*, *flake8*, *pylint*, and *radon*. It includes:
+  - `merge_sort_traces`: Screenshots and text files of the results after refactoring merge sort.
+  - `selection_sort_screenshots`: Screenshots documenting the debugging process for Selection Sort.
+
+- **`pre_traces`**: Holds screenshots and text files from static analysis before refactoring, specifically for merge sort.
+
+- **`sorting_algorithms`**: Contains the implementations of the Merge Sort and Selection Sort algorithms.
+
+- **`tests`**: Includes test cases for Merge Sort and Selection Sort.
+
+- **`work_dir`**: Contains various debugging files and logs used during the development and debugging process, organized by debugging method (e.g., print debugging, log debugging, pdb debugging).
+
+```
+hw2
+│   .gitignore
+│   coverage.json
+│   hw2_debugging.py
+│   LICENSE.md
+│   rand.py
+│   README.md
+│   requirements.txt
+│   
+├───.github
+│   └───workflows
+│           automate.yml
+│
+├───post_traces
+│   ├───merge_sort_traces
+│   │   ├───screenshots
+│   │   │       autopep8_after_running_first_time.png
+│   │   │       autopep8_output_after_running_first_time.png
+│   │   │       flake8_after_refactoring.png
+│   │   │       flake8_output_after_refactor.png
+│   │   │       pylint_after_refactoring.png
+│   │   │       pylint_output_after_refactoring.png
+│   │   │       radon_output_ss.png
+│   │   │       radon_output_txt.png
+│   │   │
+│   │   └───txt_files
+│   │           post_autopep8_formatted.txt
+│   │           post_flake8_output.txt
+│   │           post_pylint_refactor.txt
+│   │           post_radon_refactor.txt
+│   │
+│   └───selection_sort_screenshots
+│           1_selection_sort_bug.png
+│           2_selection_sort_print_debug.png
+│           3_selection_sort_log_debug.png
+│           4_selection_sort_log_fixing_temp_variable_issue.png
+│           5_selection_sort_pdb_debug.png
+│           6_selection_sort_test_case_pass.png
+│
+├───pre_traces
+│   └───merge_sort_traces
+│       ├───screenshots
+│       │       autopep8_before_refactor.png
+│       │       autopep8_before_refactor_2.png
+│       │       flake8_before_refactor.png
+│       │       flake8_before_refactor_2.png
+│       │       pylint_before_refactor.png
+│       │       pylint_before_refactor_2.png
+│       │       radon_before_refactor.png
+│       │       radon_before_refactor_2.png
+│       │
+│       └───txt_files
+│               autopep8_before_refactor.txt
+│               flake8_before_refactor.txt
+│               pylint_before_refactor.txt
+│               radon_before_refactor.txt
+│
+├───sorting_algorithms
+│   │   mergeSort.py
+│   │   selectionSort.py
+│
+├───tests
+│   │   test_merge_sort.py
+│   │   test_selection_sort.py
+│
+├───work_dir
+│   ├───debuging
+│   │       debugging.py
+│   │
+│   ├───fixing_log_debugging
+│   │       debugging.py
+│   │       partial_debugging.log
+│   │
+│   ├───log_debugging
+│   │       debugging.log
+│   │       debugging.py
+│   │
+│   ├───pdb_debugging
+│   │       debugging.py
+│   │
+│   └───print_debugging
+│           debugging.py
+```
+
+---
 
 ### Installation and Usage
 
