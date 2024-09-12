@@ -1,11 +1,17 @@
 
 <h2 align="center">
-    HW2: Debugging
+    HW2: Debugging Merge Sort
 </h2>
+
+<div align="center">
+        <img width="300" height="200" src="https://www.lavivienpost.net/wp-content/uploads/2022/02/merge-sort-400.gif" alt="Merge Sort">
+        <br>
+</div>
 
 <a href="https://github.com/Rmv-se-510/hw1">Link for HW1</a>
 
-
+<div align="center">
+    
 [![cov](https://we-cli.github.io/jayin/badges/coverage.svg)](https://github.com/Rmv-se-510/hw2/actions)
 [![License](https://img.shields.io/badge/License-MIT-purple.svg?style=flat)](https://github.com/Rmv-se-510/hw2/main/LICENSE)
 [![Collaborators](https://img.shields.io/badge/Collaborators-3-orange.svg?style=flat)](https://github.com/Rmv-se-510/hw2/graphs/contributors)
@@ -19,11 +25,51 @@
 ![Pylint](https://img.shields.io/badge/pylint-passing-brightgreen)
 ![Autopep8](https://img.shields.io/badge/autopep8-passing-brightgreen)
 
+</div>
 
-**Final Result**
-- Merge Sort logic works fine & array gets sorted once the hw2_debugging.py file is ran.
+
+
+# Merge Sort
+
+Merge Sort is a classic divide-and-conquer algorithm used for sorting arrays or lists. It operates by recursively dividing the array into two halves, sorting each half, and then merging the sorted halves to produce a sorted array. This approach ensures that the final sorted array is produced in O(n log n) time complexity, making it efficient and stable.
+
+## Table of Contents
+
+- [Algorithm Overview](#algorithm-overview)
+- [How It Works](#how-it-works)
+- [Implementation](#implementation)
+- [Complexity](#complexity)
+
+## Algorithm Overview
+
+1. **Divide**: Split the array into two halves.
+2. **Conquer**: Recursively sort each half.
+3. **Combine**: Merge the two sorted halves into a single sorted array.
+
+## How It Works
+
+1. **Divide**: If the array has one or zero elements, it is already sorted. Otherwise, divide the array into two halves.
+2. **Sort**: Recursively apply Merge Sort to both halves of the array.
+3. **Merge**: Merge the two sorted halves into a single sorted array by comparing the elements of both halves and combining them in order.
+
+## Implementation
+
+**rand.py**
+
+Generates an array of random integers between 1 and 20 using the `shuf` command on Unix-based systems. Utilizes Python's `subprocess` module to run external commands.
+
+**hw2_debugging.py**
+
+Implements Merge Sort for sorting arrays and provides a `recombine` function to merge two sorted arrays. Integrates with the random array generator to sort arrays with random values.
+
+
+## Complexity
+
+- **Time Complexity**: O(n log n) for all cases (best, average, worst).
+- **Space Complexity**: O(n) due to the additional space used for merging.
 
 ---
+
 
 ### Installation and Usage
 
@@ -49,13 +95,13 @@
 
 5. To run the main program:
    ```bash
-   python main.py --input <INPUT_STR>
+   python hw2_debugging.py
    ```
    Example:
    ```
-   @Meet090201vora ➜ /workspaces/hw2 (main) $ python hw2_debugging.py --input [10, 7, 8, 9, 1, 5]
-   Sorted array using Merge Sort algorithm is: [1, 5, 7, 8, 9, 10]
-   @Meet090201vora ➜ /workspaces/hw1 (main) $
+   LENOVO@LENOVO MINGW64 ~/OneDrive/Desktop/SOFTWARE ENGINEERING - 510/hw2 (main)
+   $ python hw2_debugging.py
+   [1, 5, 5, 6, 6, 8, 10, 10, 11, 11, 12, 12, 13, 15, 16, 17, 18, 19, 19, 20]
    ```
 
 ---
