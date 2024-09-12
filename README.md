@@ -16,7 +16,7 @@
 <img alt="Actions Status" src="https://github.com/Rmv-se-510/hw2/workflows/Test/badge.svg">
 ![Flake8](https://img.shields.io/badge/flake8-passing-brightgreen)
 ![Pyright](https://img.shields.io/badge/pyright-passing-brightgreen)
-![Pylint](https://github.com/Rmv-se-510/hw2/actions/workflows/pylint.yml/badge.svg)
+![Pylint](https://github.com/Rmv-se-510/hw2/workflows/pylint.yml/badge.svg)
 ![Autopep8](https://img.shields.io/badge/autopep8-passing-brightgreen)
 
 
