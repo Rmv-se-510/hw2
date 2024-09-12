@@ -12,7 +12,7 @@
 
 <div align="center">
     
-[![cov](https://we-cli.github.io/jayin/badges/coverage.svg)](https://github.com/Rmv-se-510/hw2/actions)
+![Codecov](https://codecov.io/github/Rmv-se-510/hw2/branch/main/graph/badge.svg)
 [![License](https://img.shields.io/badge/License-MIT-purple.svg?style=flat)](https://github.com/Rmv-se-510/hw2/main/LICENSE)
 [![Collaborators](https://img.shields.io/badge/Collaborators-3-orange.svg?style=flat)](https://github.com/Rmv-se-510/hw2/graphs/contributors)
 [![Language](https://img.shields.io/badge/Language-Python-blue.svg?style=flat)](https://github.com/Rmv-se-510/hw2/search?l=python)
