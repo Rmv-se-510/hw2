@@ -50,17 +50,15 @@ jobs:
       run: |
         pytest -v tests/
 
-    - name: Run tests and collect coverage
-      run: |
-        pytest --cov=your_module_name --cov-report=xml
-      env:
-        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+    - name: Test the cases
+      run: | 
+        pytest --cov=. --cov-report=term --cov-report=json:coverage.json # to test all cases with code coverage and report to terminal as well as to coverage.json file
     
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v3
       with:
-        files: coverage.xml
         token: ${{ secrets.CODECOV_TOKEN }}
+        files: ./coverage.json
 
    
 
