@@ -143,8 +143,8 @@ jobs:
               coverage_color="red"
             fi
           else
-            coverage_percentage="100"
-            coverage_color="green"
+            coverage_percentage="50"
+            coverage_color="orange"
           fi
           coverage_badge="https://img.shields.io/badge/coverage-${coverage_percentage}%25-${coverage_color}"
           echo "Coverage badge: $coverage_badge"
