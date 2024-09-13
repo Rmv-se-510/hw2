@@ -70,14 +70,14 @@ jobs:
           pip install pytest pytest-cov
 
       - run: |
-          pytest --cov=source --cov-report xml
+          pytest --cov=source --cov-report json
         continue-on-error: true
 
       - name: Upload coverage report
         uses: actions/upload-artifact@v3
         with:
           name: coverage-report
-          path: coverage.xml
+          path: coverage.json
 
   generate-badges:
     name: Generate Badges
