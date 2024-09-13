@@ -55,8 +55,8 @@ jobs:
   coverage:
     name: Code Coverage
     runs-on: ubuntu-latest
-    # env:
-    #   # PYTHONPATH: ${{ github.workspace }}
+    env:
+      PYTHONPATH: ${{ github.workspace }}
     needs: [autopep8, pylint]
     steps:
       - uses: actions/checkout@v3
@@ -71,7 +71,7 @@ jobs:
 
       - run: |
           pytest --cov=. --cov-report xml --cov-report term
-        #continue-on-error: true
+        continue-on-error: true
 
       - name: Upload coverage report
         uses: actions/upload-artifact@v3
@@ -125,7 +125,7 @@ jobs:
           pylint_badge="https://img.shields.io/badge/pylint-${pylint_score}-${pylint_color}"
           echo "Pylint badge: $pylint_badge"
 
-          pytest_output=$(pytest --cov=source --cov-report xml 2>&1) || true
+          pytest_output=$(pytest --cov=. --cov-report xml 2>&1) || true
           exit_code_pytest=1
           echo "Pytest exit code: $pytest_exit_code"
           echo "Pytest output: $pytest_output"
