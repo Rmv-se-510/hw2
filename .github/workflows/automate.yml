@@ -49,7 +49,7 @@ jobs:
           pip install pylint
 
       - id: pylint
-        run: pylint **/*.py
+        run: pylint hw2_debugging.py rand.py
         continue-on-error: true
 
   coverage:
@@ -103,7 +103,7 @@ jobs:
       - name: Generate badge URLs
         id: generate_badges
         run: |
-          pylint_output=$(pylint **/*.py 2>&1) || true
+          pylint_output=$(pylint hw2_debugging.py rand.py 2>&1) || true
           pylint_exit_code=$?
           echo "Pylint exit code: $pylint_exit_code"
           echo "Pylint output: $pylint_output"
