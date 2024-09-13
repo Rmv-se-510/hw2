@@ -167,7 +167,7 @@ jobs:
         env:
           RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
-          sed -i '/\[Test Coverage: pytest-cov\]/c\[![Test Coverage: pytest-cov](${{ env.coverage_badge }})](${{ env.RUN_URL }})' README.md
+          sed -i '/\[cov\]/c\[![cov](${{ env.coverage_badge }})](${{ env.RUN_URL }})' README.md
           sed -i '/\[Pylint\]/c\[![Pylint](${{ env.pylint_badge }})](${{ env.RUN_URL }})' README.md
           sed -i '/\[Tests\]/c\[![Tests](${{ env.test_badge }})](${{ env.RUN_URL }})' README.md
 
