@@ -21,9 +21,9 @@
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 <img alt="Actions Status" src="https://github.com/Rmv-se-510/hw2/workflows/Test/badge.svg">
 [![Flake8](https://img.shields.io/badge/flake8-10.00-green)](https://github.com/Rmv-se-510/hw2/actions/runs/10843072509)
-[![Radon](https://img.shields.io/badge/radon-passing-brightgreen)](https://github.com/Rmv-se-510/hw2/actions/runs/10843072509)
+![Radon](https://img.shields.io/badge/radon-passing-brightgreen)
 [![Pylint](https://img.shields.io/badge/pylint-10.00-green)](https://github.com/Rmv-se-510/hw2/actions/runs/10843072509)
-[![Autopep8](https://img.shields.io/badge/autopep8-passing-brightgreen)](https://github.com/Rmv-se-510/hw2/actions/runs/10843072509)
+![Autopep8](https://img.shields.io/badge/autopep8-passing-brightgreen)
 
 </div>
 
