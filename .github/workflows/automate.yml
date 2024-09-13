@@ -70,7 +70,7 @@ jobs:
           pip install pytest pytest-cov
 
       - run: |
-          pytest --cov=source --cov-report xml
+          pytest --cov=sorting_algorithms --cov-report xml
         continue-on-error: true
 
       - name: Upload coverage report
