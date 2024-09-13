@@ -55,9 +55,8 @@ jobs:
   coverage:
     name: Code Coverage
     runs-on: ubuntu-latest
-    env:
-      # PYTHONPATH: ${{ github.workspace }}
-      # echo "
+    # env:
+    #   # PYTHONPATH: ${{ github.workspace }}
     needs: [autopep8, pylint]
     steps:
       - uses: actions/checkout@v3
