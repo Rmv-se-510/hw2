@@ -145,7 +145,7 @@ jobs:
           else
             radon_color="green"
           fi
-          radon_badge="https://img.shields.io/badge/radon-${radon_score}-${radon_color}"
+          radon_badge="https://img.shields.io/badge/radon_cc-${radon_score}-${radon_color}"
           echo "radon badge: $radon_badge"
 
           
