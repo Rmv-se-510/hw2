@@ -154,7 +154,7 @@ jobs:
           else
             radon_color="green"
           fi
-          radon_badge="https://img.shields.io/badge/radon_cc-${radon_score}-${radon_color}?link={radon_url}"
+          radon_badge="https://img.shields.io/badge/radon_cc-${radon_score}-${radon_color}?link=${radon_url}"
           echo "radon badge: $radon_badge"
 
           
@@ -177,7 +177,7 @@ jobs:
           else
             pylint_color="green"
           fi
-          pylint_badge="https://img.shields.io/badge/pylint-${pylint_score}-${pylint_color}?link={pylint_url}"
+          pylint_badge="https://img.shields.io/badge/pylint-${pylint_score}-${pylint_color}?link=${pylint_url}"
           echo "Pylint badge: $pylint_badge"
 
           pytest_output=$(pytest --cov=. --cov-report xml 2>&1) || true
@@ -201,7 +201,7 @@ jobs:
             coverage_percentage="50"
             coverage_color="orange"
           fi
-          coverage_badge="https://img.shields.io/badge/coverage-${coverage_percentage}%25-${coverage_color}?link={coverage_url}"
+          coverage_badge="https://img.shields.io/badge/coverage-${coverage_percentage}%25-${coverage_color}?link=${coverage_url}"
           echo "Coverage badge: $coverage_badge"
 
           if echo "$pytest_output" | grep -q "FAILURES"; then
@@ -211,7 +211,7 @@ jobs:
             test_status="passing"
             test_color="green"
           fi
-          test_badge="https://img.shields.io/badge/tests-${test_status}-${test_color}?link={tests_url}"
+          test_badge="https://img.shields.io/badge/tests-${test_status}-${test_color}?link=${tests_url}"
           echo "Test badge: $test_badge"
 
           
