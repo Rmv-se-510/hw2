@@ -131,7 +131,7 @@ jobs:
           echo "Radon exit code: $radon_exit_code"
           echo "Radon output: $radon_output"
 
-          radon_score=$(echo "$radon_output" | grep -oP '(?<=Average complexity: [A-Z] \()\d+\.\d+' | tail -1)
+          radon_score=$(echo "$radon_output" | grep -oP '(?<=Average complexity: [A-Z] \()\d+\.\d{2}' | tail -1)
           radon_score=${radon_score:-0}
           echo "Radon score: $radon_score"
 
