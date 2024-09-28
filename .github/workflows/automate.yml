@@ -132,6 +132,7 @@ jobs:
           echo "Radon output: $radon_output"
 
           radon_score=$(echo "$radon_output" | grep -oP '(?<=Average complexity: [A-Z] \()\d+\.\d{2}' | tail -1)
+          radon_badge_url="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           radon_score=${radon_score:-0}
           echo "Radon score: $radon_score"
 
@@ -155,6 +156,7 @@ jobs:
           echo "Pylint output: $pylint_output"
           
           pylint_score=$(echo "$pylint_output" | grep -oP '(?<=rated at )\d+\.\d+' | tail -1)
+          pylint_badge_url="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           pylint_score=${pylint_score:-0}
           echo "Pylint score: $pylint_score"
           
@@ -193,6 +195,7 @@ jobs:
             coverage_color="orange"
           fi
           coverage_badge="https://img.shields.io/badge/coverage-${coverage_percentage}%25-${coverage_color}"
+          coverage_badge_url="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           echo "Coverage badge: $coverage_badge"
 
           if echo "$pytest_output" | grep -q "FAILURES"; then
@@ -203,22 +206,30 @@ jobs:
             test_color="green"
           fi
           test_badge="https://img.shields.io/badge/tests-${test_status}-${test_color}"
+          test_badge_url="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           echo "Test badge: $test_badge"
 
           
+          # Save badge URLs to the environment
           echo "pylint_badge=$pylint_badge" >> $GITHUB_ENV
           echo "coverage_badge=$coverage_badge" >> $GITHUB_ENV
           echo "test_badge=$test_badge" >> $GITHUB_ENV
           echo "radon_badge=$radon_badge" >> $GITHUB_ENV
 
+          # Save badge URLs for linking
+          echo "pylint_badge_url=$pylint_badge_url" >> $GITHUB_ENV
+          echo "coverage_badge_url=$coverage_badge_url" >> $GITHUB_ENV
+          echo "test_badge_url=$test_badge_url" >> $GITHUB_ENV
+          echo "radon_badge_url=$radon_badge_url" >> $GITHUB_ENV
+
       - name: Update README with badges
         env:
           RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
-          sed -i '/\[cov\]/c\[![cov](${{ env.coverage_badge }})](${{ env.RUN_URL }})' README.md
-          sed -i '/\[Pylint\]/c\[![Pylint](${{ env.pylint_badge }})](${{ env.RUN_URL }})' README.md
-          sed -i '/\[Tests\]/c\[![Tests](${{ env.test_badge }})](${{ env.RUN_URL }})' README.md
-          sed -i '/\[Radon\]/c\[![Radon](${{ env.radon_badge }})](${{ env.RUN_URL }})' README.md
+          sed -i '/\[cov\]/c\[![cov](${{ env.coverage_badge }})](${{ env.coverage_badge_url }})' README.md
+          sed -i '/\[Pylint\]/c\[![Pylint](${{ env.pylint_badge }})](${{ env.pylint_badge_url }})' README.md
+          sed -i '/\[Tests\]/c\[![Tests](${{ env.test_badge }})](${{ env.test_badge_url }})' README.md
+          sed -i '/\[Radon\]/c\[![Radon](${{ env.radon_badge }})](${{ env.radon_badge_url}})' README.md
           
 
       - name: Commit and push changes
