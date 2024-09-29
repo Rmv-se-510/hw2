@@ -12,7 +12,7 @@
 
 <div align="center">
     
-[![cov](https://img.shields.io/badge/coverage-100%25-green?link=https://github.com/Rmv-se-510/hw2/actions/runs/11080252729/jobs/coverage)](https://github.com/Rmv-se-510/hw2/actions/runs/11080252729)
+[![cov](https://img.shields.io/badge/coverage-100%25-green?link=https://github.com/Rmv-se-510/hw2/actions/runs/11096402104/jobs/coverage)](https://github.com/Rmv-se-510/hw2/actions/runs/11096402104)
 [![License](https://img.shields.io/badge/License-MIT-purple.svg?style=flat)](https://github.com/Rmv-se-510/hw2/main/LICENSE)
 [![Collaborators](https://img.shields.io/badge/Collaborators-3-orange.svg?style=flat)](https://github.com/Rmv-se-510/hw2/graphs/contributors)
 [![Language](https://img.shields.io/badge/Language-Python-blue.svg?style=flat)](https://github.com/Rmv-se-510/hw2/search?l=python)
@@ -20,8 +20,8 @@
 [![GitHub Repo Size](https://img.shields.io/github/repo-size/Rmv-se-510/hw2.svg)](https://img.shields.io/github/repo-size/Rmv-se-510/hw2.svg)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 <img alt="Actions Status" src="https://github.com/Rmv-se-510/hw2/workflows/Test/badge.svg">
-[![Radon](https://img.shields.io/badge/radon_cc-3.33-green?link=https://github.com/Rmv-se-510/hw2/actions/runs/11080252729/jobs/radon)](https://github.com/Rmv-se-510/hw2/actions/runs/11080252729)
-[![Pylint](https://img.shields.io/badge/pylint-10.00-green?link=https://github.com/Rmv-se-510/hw2/actions/runs/11080252729/jobs/pylint)](https://github.com/Rmv-se-510/hw2/actions/runs/11080252729)
+[![Radon](https://img.shields.io/badge/radon_cc-3.33-green?link=https://github.com/Rmv-se-510/hw2/actions/runs/11096402104/jobs/radon)](https://github.com/Rmv-se-510/hw2/actions/runs/11096402104)
+[![Pylint](https://img.shields.io/badge/pylint-10.00-green?link=https://github.com/Rmv-se-510/hw2/actions/runs/11096402104/jobs/pylint)](https://github.com/Rmv-se-510/hw2/actions/runs/11096402104)
 ![Autopep8](https://img.shields.io/badge/autopep8-passing-brightgreen)
 
 </div>
